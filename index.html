@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>INSIDEERS TECH TEST</title>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style.css">
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="body">
+
+    <!-- THIS IS THE TOP BAR WITH THE FILTERING BUTTONS -->
+    <nav class="nav nav__button-isChecked">
+        <button class="nav__button is-checked" data-filter="*">All</button>
+        <button class="nav__button" data-filter=".website">Websites</button>
+        <button class="nav__button" data-filter=".code">Codes</button>
+        <button class="nav__button" data-filter=".blog">Blogs</button>
+        <button class="nav__button" data-filter=".testing">Testing</button>
+    </nav>
+
+    <!-- THIS IS THE FILTER BUTTON; ENABLES THE FILTER BOX -->
+    <div class="enable-filter-button">
+        <button class="aside__enable-filter-button ">Filters</button>
+    </div>
+
+    <!-- THIS IS THE LEFT BAR WITH SECONDARY FILTERING OPTIONS -->
+    <aside class="aside">
+        <div class="aside__disable-filter--container">
+            <h2>Search</h2>
+            <button class="aside__disable-filter-button">X</button>
+        </div>
+        <p><input type="text" class="aside__input aside__search-filter" placeholder="Search by content"></p>
+        <h2 class="main__element-text--title">Filter by content type</h2>
+        <div class="aside__filter aside__button-isChecked">
+            <button class="aside__filter-button is-checked" data-filter="*">All</button>
+            <button class="aside__filter-button" data-filter=".business">Business</button>
+            <button class="aside__filter-button" data-filter=".design">Design</button>
+            <button class="aside__filter-button" data-filter=".methodologies">Methodologies</button>
+            <button class="aside__filter-button" data-filter=".cleanCode">Clean Code</button>
+        </div>
+
+    </aside>
+
+    <!-- THIS IS THE SEARCHBAR WHEN > 800px -->
+    <p><input type="text" class="main__input main__search-filter" placeholder="Search by content"></p>
+
+    <!-- THIS IS THE MAIN CONTAINER OF THE ELEMENTS BROWSED -->
+    <main class="main">
+
+        <!-- FIRST -->
+        <div class="main__element website business" data-category="website business">
+            <div class="main__element-header">
+            </div>
+            <div class="main__element-text">
+                <h2 class="main__element-text--title">Business Website 1</h2>
+                <p>This box contains a business text for the first company.</p>
+            </div>
+            <div class="main__element-button">
+                <p><a class="main__element-button--link link-color" href="#">Link to the Website</a></p>
+            </div>
+        </div>
+
+        <!-- SECOND -->
+        <div class="main__element code" data-category="code">
+            <div class="main__element-header">
+            </div>
+            <div class="main__element-text">
+                <h2 class="main__element-text--title">Code</h2>
+                <p>This is a random text just to test filters from this code. </p>
+            </div>
+            <div class="main__element-button">
+                <p><a class="main__element-button--link link-color" href="#">Link to the Code</a></p>
+            </div>
+        </div>
+
+        <!-- THIRD -->
+        <div class="main__element blog" data-category="blog">
+            <div class="main__element-header">
+            </div>
+            <div class="main__element-text">
+                <h2 class="main__element-text--title">Blog</h2>
+                <p>This will be a useful blog in the future. </p>
+            </div>
+            <div class="main__element-button">
+                <p><a class="main__element-button--link link-color" href="#">Link to the Blog</a></p>
+            </div>
+        </div>
+
+        <!-- FOURTH -->
+        <div class="main__element testing cleanCode" data-category="testing cleanCode">
+            <div class="main__element-header">
+            </div>
+            <div class="main__element-text">
+                <h2 class="main__element-text--title">Testing Clean Code</h2>
+                <p>This must have some clean code.</p>
+            </div>
+            <div class="main__element-button">
+                <p><a class="main__element-button--link link-color" href="#">Link to the Testing</a></p>
+            </div>
+        </div>
+
+        <!-- FIFTH -->
+        <div class="main__element website" data-category="website">
+            <div class="main__element-header">
+            </div>
+            <div class="main__element-text">
+                <h2 class="main__element-text--title">Website number 2</h2>
+                <p>We will try to improve. </p>
+            </div>
+            <div class="main__element-button">
+                <p><a class="main__element-button--link link-color" href="#">Link to the Website</a></p>
+            </div>
+        </div>
+
+        <!-- SIXTH -->
+        <div class="main__element blog methodologies" data-category="blog methodologies">
+            <div class="main__element-header">
+            </div>
+            <div class="main__element-text">
+                <h2 class="main__element-text--title">Methodology Blog</h2>
+                <p>Good methodologies to arrange that code. </p>
+            </div>
+            <div class="main__element-button">
+                <p><a class="main__element-button--link link-color" href="#">Link to the Blog</a></p>
+            </div>
+        </div>
+
+        <!-- SEVENTH -->
+        <div class="main__element testing" data-category="testing">
+            <div class="main__element-header">
+            </div>
+            <div class="main__element-text">
+                <h2 class="main__element-text--title">Testing</h2>
+                <p>Try to type Lorem ipsum in the search bar </p>
+            </div>
+            <div class="main__element-button">
+                <p><a class="main__element-button--link link-color" href="#">Link to the Testing</a></p>
+            </div>
+        </div>
+
+        <!-- EIGHTH -->
+        <div class="main__element code design" data-category="code design">
+            <div class="main__element-header">
+            </div>
+            <div class="main__element-text">
+                <h2 class="main__element-text--title">Design Code</h2>
+                <p>This contains some design tips.</p>
+            </div>
+            <div class="main__element-button">
+                <p><a class="main__element-button--link link-color" href="#">Link to the Code</a></p>
+            </div>
+        </div>
+
+        <!-- NINETH -->
+        <div class="main__element testing cleanCode" data-category="testing cleanCode">
+            <div class="main__element-header">
+            </div>
+            <div class="main__element-text">
+                <h2 class="main__element-text--title">More Testing</h2>
+                <p>Sometimes it can be tiring.</p>
+            </div>
+            <div class="main__element-button">
+                <p><a class="main__element-button--link link-color" href="#">Link to the Testing</a></p>
+            </div>
+        </div>
+
+        <!-- TENTH -->
+        <div class="main__element website business" data-category="website business">
+            <div class="main__element-header">
+            </div>
+            <div class="main__element-text">
+                <h2 class="main__element-text--title">Business Website 3</h2>
+                <p>Because why not.</p>
+            </div>
+            <div class="main__element-button">
+                <p><a class="main__element-button--link link-color" href="#">Link to the Website</a></p>
+            </div>
+        </div>
+
+        <!-- ELEVENTH -->
+        <div class="main__element code design" data-category="code design">
+            <div class="main__element-header">
+            </div>
+            <div class="main__element-text">
+                <h2 class="main__element-text--title">Another Code</h2>
+                <p>But this one is very cool. </p>
+            </div>
+            <div class="main__element-button">
+                <p><a class="main__element-button--link link-color" href="#">Link to the Code</a></p>
+            </div>
+        </div>
+
+        <!-- TWELFTH -->
+        <div class="main__element blog methodologies" data-category="blog methodologies">
+            <div class="main__element-header">
+            </div>
+            <div class="main__element-text">
+                <h2 class="main__element-text--title">Last Blog</h2>
+                <p>Because its the last element. </p>
+            </div>
+            <div class="main__element-button">
+                <p><a class="main__element-button--link link-color" href="#">Link to the Blog</a></p>
+            </div>
+        </div>
+
+    </main>
+    <!-- LOADING JQUERY LIB -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- ISOTOPE PLUGIN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+    <!-- SCRIPT FILE -->
+    <script src="script.js"></script>
+</body>
+
+</html>
